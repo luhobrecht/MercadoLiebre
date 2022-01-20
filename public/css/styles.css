@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,39 +9,62 @@ body{
     background-color: #ebebeb;
 }
 
-h3{
-    font-size: 24px;
-}
-
-p{
-    font-size: 12px;
-}
-div.top-header{
-    padding: 5%;
-}
-
 header{
     background-color: #EAC926;
+    padding: 20px;
 }
 
-header div.logo{
+.primerbarra{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    align-items: flex-start;
+}
+
+.logo{
     width: 50%;
-}
-
-header div.logo{
     padding: 10px;
-}
-header nav{
-    font-size: 12px;
+    flex-grow: 1;
 }
 
-header ul li{
+.frase {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar{
+    font-size: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navbar ul li{
     list-style-type: none;
 }
 
-header ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #000;
+}
+
+.navbar ul li i{
+    padding-left: 3px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
 }
 
 header .form .input{
@@ -49,6 +73,8 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    width: 50%;
+    flex-grow: 1;
 }
 header .form .submit{
     background-color: #FFF;
@@ -57,44 +83,46 @@ header .form .submit{
     width: 10%;
 }
 
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
+.burger-menu{
+    background-color: #03264c;
     color: #FFF;
+    display:block;
+    max-width: 50px;
+    padding: 10px 0;
+    border-radius: 8px; 
+    text-align: center;
     font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
+    margin: auto;  
 }
 
 article div.articulo{
     width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #ebebeb;
 }
 
 .precio{
     font-size: 18px;
 }
 
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .descuento,
-.descripcion{
+.descripciones{
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
-.descripcion{
+.descripciones{
     color: #666;
+    margin-bottom: 15px;
 }
 
 section.banner img{
@@ -103,6 +131,8 @@ section.banner img{
 
 main{
     width: 90%;
+    margin: auto;
+
 }
 
 main section article{
@@ -114,7 +144,7 @@ main section article img{
 }
 
 main section article i,
-.discount{
+.descuento{
     color: #39b54a;
 }
 
@@ -126,16 +156,48 @@ footer{
 h5{
     font-weight: bolder;
     color: #666;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p{
-    font-size: 14px;
+   font-size: 14px;
 }
 
 i#imagen{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.descripciones{
+    display: none;
+}
+
+@media (min-width: 361px){
+    .descripciones{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .principal{
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    }
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 769px){
+    .descripciones{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .principal{
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    }
 }
 
