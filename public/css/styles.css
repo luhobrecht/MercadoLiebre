@@ -49,11 +49,18 @@ header .form{
 }
 header nav{
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display:flex;
+    justify-content:space-between
+}
+header nav ul{
+    display:flex;
 }
 
 header ul li{
     list-style-type: none;
+    padding:4px
 }
 
 header ul li a{
@@ -218,6 +225,102 @@ footer .final {
     margin-top: 20px;
     text-align: left;
     margin-bottom: 20px;
+}
+
+.create-login{
+    padding:20px 15px;
+    text-align: center;
+    background-color: #ebebeb;
+
+}
+.control-login{
+    margin-bottom: 15px;
+
+}
+
+.control-login input {
+    width: 70%;
+    border-color: white;
+    padding: 4px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.control-login .buttom a{
+    text-decoration: none;
+}
+
+.buttom{
+    background-color: #1259c3 ;
+    color:white;
+    border:none;
+    font-size:20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.create-register{
+    background-color: #ebebeb;
+    padding:20px 15px;
+    display:block;
+}
+
+.control-register{
+    margin-bottom:30px;
+   width: 100%;
+}
+
+.other #radio{
+    font-size: 14px;
+    margin-right:40px;
+}
+
+.other{
+    margin-bottom: 15px;
+}
+
+.other #cat{
+    font-size: 14px;
+    margin-bottom:2px;
+}
+
+.control-register label{
+    font-size: 16px;
+    font-weight: bolder;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.control-register input{
+    width: 100%;
+    border-color: white;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.control-register .buttom a{
+    text-decoration: none;
+}
+
+.reset{
+    background-color: #666;
+    color:white;
+    border:none;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.submit{
+    background-color: #1259c3 ;
+    color:white;
+    border:none;
+    font-size:20px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 @media(max-width:360px){
