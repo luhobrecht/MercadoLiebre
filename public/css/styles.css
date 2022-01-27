@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
     box-sizing: border-box;
 }
 
@@ -9,62 +9,56 @@ body{
     background-color: #ebebeb;
 }
 
-header{
-    background-color: #EAC926;
-    padding: 20px;
+h3{
+    font-size: 24px;
 }
 
-.primerbarra{
+p{
+    font-size: 12px;
+}
+
+div.top-header{
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
-    align-items: flex-start;
+    padding: 5%
 }
 
-.logo{
-    width: 50%;
-    padding: 10px;
-    flex-grow: 1;
-}
-
-.frase {
-    font-size: 18px;
-    padding: 10px;
-    font-weight: 400;
+header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
 
-.navbar{
-    font-size: 15px;
+header{
+    background-color: #EAC926;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none;
+header div.logo,
+header .form{
+    width: 50%;
 }
 
-.navbar ul li{
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
     list-style-type: none;
 }
 
-.navbar ul li a{
+header ul li a{
     text-decoration: none;
     color: #000;
-}
-
-.navbar ul li i{
-    padding-left: 3px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
 }
 
 header .form .input{
@@ -72,10 +66,9 @@ header .form .input{
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
-    width: 50%;
-    flex-grow: 1;
+    padding: 2px
 }
+
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
@@ -83,46 +76,50 @@ header .form .submit{
     width: 10%;
 }
 
-.burger-menu{
-    background-color: #03264c;
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
     color: #FFF;
-    display:block;
-    max-width: 50px;
-    padding: 10px 0;
-    border-radius: 8px; 
-    text-align: center;
     font-size: 20px;
-    margin: auto;  
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
 }
 
-article div.articulo{
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-    border-top: 1px solid #ebebeb;
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.precio{
+.price{
     font-size: 18px;
+    width: 30%;
 }
 
-h3{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
+.discount{
+    width: 70%;
 }
 
-.descuento,
-.descripciones{
+.discount,
+.description{
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
-.descripciones{
+.description{
     color: #666;
-    margin-bottom: 15px;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
 }
 
 section.banner img{
@@ -131,12 +128,12 @@ section.banner img{
 
 main{
     width: 90%;
-    margin: auto;
-
+    margin: 0 auto;
 }
 
 main section article{
-    background-color: #fff;
+    background-color: #fff;    
+    margin: 10px 0px;
 }
 
 main section article img{
@@ -144,60 +141,164 @@ main section article img{
 }
 
 main section article i,
-.descuento{
+.discount{
     color: #39b54a;
 }
 
-footer{
-    text-align: center;
-
-}
-
-h5{
-    font-weight: bolder;
-    color: #666;
+main section article i{
+    display: block;
     font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
-p{
-   font-size: 14px;
+main section h3{
+    margin: 20px 0px;
 }
 
-i#imagen{
-    color: #1259c3;
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.footer {
+display:flex;
+flex-direction: column;
+justify-content: center;
+background-color: white;
+
+}
+
+.footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-content:center;
+    margin-top: 40px;
+}
+
+footer #imagen {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #1259c3;
+    align-self: center;
 }
 
-.descripciones{
-    display: none;
+footer h5 {
+    font-size: 16px;
+    color: #666;
+    height: 400;
+    align-self: center;
+}
+
+footer section .text {
+    font-size:12px;
+    color: #666;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+   align-self: center;
+}
+
+footer .final {
+    font-size: 10px;
+    color:#666;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+@media(max-width:360px){
+     header nav{
+         display:none;
+     }
 }
 
 @media (min-width: 361px){
-    .descripciones{
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
     }
     .burger-menu{
-        display: none;
+        display:none;
     }
-    .principal{
-        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    header nav{
+      padding-bottom: 10px;
     }
-    .encabezado{
-        display: flex;
-        flex-wrap: wrap;
+    header div.logo{
+       width: 35%;
     }
+    header .form{
+    width: 35%;
+    align-self: center;
+    margin
+    }
+    header div.top-header p{
+        width: 30%;
+        align-self: center;
+        margin-top: 10px;
+    }
+
 }
 
-@media(min-width: 769px){
-    .descripciones{
-        display: flex;
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
     }
     .burger-menu{
-        display: none;
+        display:none;
     }
-    .principal{
-        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    header nav{
+        padding-bottom: 10px;
+    }
+
+    div.top-header{
+    justify-content: space-between;
+    }
+    header div.logo{
+       width: 30%;
+    }
+    header div.form{
+    width: 20%;
+    align-self: center;
+    }
+    header div.top-header p{
+        width: 30%;
+        align-self: center;
+        margin-top: 10px;
+        font-size: 14px;
     }
 }
 
