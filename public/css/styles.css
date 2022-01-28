@@ -119,14 +119,13 @@ div.offers{
     font-weight: normal;
 }
 
+main section article:hover .description{
+    visibility: visible;
+}
+
 h3,
 .description{
     color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
 }
 
 section.banner img{
@@ -166,6 +165,10 @@ main section article i{
     top: -15px;
 }
 
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+
 main section h3{
     margin: 20px 0px;
 }
@@ -181,22 +184,28 @@ article div.main-article{
 }
 
 .footer {
-display:flex;
-flex-direction: column;
-justify-content: center;
-background-color: white;
-
-}
-
-.footer section {
     display: flex;
-    flex-direction: column;
-    justify-content: ;
-    align-content:center;
-    margin-top: 40px;
-}
+    background-color: white;
 
-footer #imagen {
+}
+.footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    
+    }
+    
+    .footer section {
+        display: flex;
+        flex-direction: column;
+        justify-content: ;
+        align-content:center;
+        margin-top: 40px;
+    }
+
+
+footer #imagen{
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
@@ -209,8 +218,10 @@ footer h5 {
     height: 400;
     align-self: center;
 }
+ 
 
 footer section .text {
+
     font-size:12px;
     color: #666;
     text-align: center;
@@ -251,6 +262,10 @@ footer .final {
     text-decoration: none;
 }
 
+.control-login .buttom:hover{
+background-color: #0022AA;
+color:white;
+}
 .buttom{
     background-color: #1259c3 ;
     color:white;
@@ -334,7 +349,7 @@ footer .final {
         display: block;
     }
 
-    main section article{
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
@@ -366,7 +381,6 @@ footer .final {
     header .form{
     width: 35%;
     align-self: center;
-    margin
     }
     header div.top-header p{
         width: 30%;
@@ -402,6 +416,16 @@ footer .final {
         align-self: center;
         margin-top: 10px;
         font-size: 14px;
+    }
+    .flexBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container{
+       display:flex;
+       flex-direction: column;
+       align-items: center;
     }
 }
 
