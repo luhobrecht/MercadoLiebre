@@ -14,7 +14,7 @@
                 <div class="logo"> 
                     <img src="img/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
-                <div class="form" action="#" method="GET">
+                <div class="form" action="/" method="GET">
                     <input class="input" type="search" name="busqueda" placeholder="Buscar productos, marcas y más">
                     <button class="button" type="submit" aria-placeholder="fa fa-search"><i class="fa fa-search"></i></button>                
                 </div>
@@ -40,20 +40,20 @@
         <section>
 <form method="POST" class="create-register">
     <div class="control-register">
-    <input type="text" name="nombre" id="nombreYapellido" minlength="6" placeholder="Nombre y Apellido">
+    <input type="text" name="nombre" id="nombreYapellido" minlength="6" placeholder="Nombre y Apellido" required>
 </div>
 <div class="control-register">
-    <input type="text" name="user" id="nombreUsuario" minlength="3" placeholder="Nombre de usuario">
+    <input type="text" name="user" id="nombreUsuario" minlength="3" placeholder="Nombre de usuario" required>
 </div>
 <div class="control-register">
-    <input type="email" name="email" id="email" placeholder="E-mail">
+    <input type="email" name="email" id="email" placeholder="E-mail" required>
 </div>
 <div class="control-register">
     <label for="fecha">Fecha de nacimiento:</label>
-    <input type="date" name="fecha" vale="2021-07-22" id="fecha">
+    <input type="date" name="fecha" vale="2021-07-22" id="fecha" required>
 </div>
 <div class="control-register">
-    <input type="text" name="domiciio" id="domicilio" placeholder="Domicilio">
+    <input type="text" name="domiciio" id="domicilio" placeholder="Domicilio" required>
 </div>
 <div class="control-register">
     <label>Perfil del usuario:</label>
@@ -93,10 +93,10 @@
     <input type="file" name="fotoPerfil" id="fotoPerfil" accept=".jpg, .jpeg, .png">
 </div>
 <div class="control-register">
-    <input type="password" name="password" id="contraseña" placeholder="Contraseña">
+    <input type="password" name="password" id="contraseña" placeholder="Contraseña" required>
 </div>
 <div class="control-register">
-    <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmar contraseña">
+    <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmar contraseña" required>
 </div>
 <div>
     <button type="reset" class="reset">Cancelar</button>
